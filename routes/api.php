@@ -25,4 +25,6 @@ Route::get('list', 'DeviceController@list');
 
 Route::post('add', 'DeviceController@add');
 
+Route::put('update', 'DeviceController@update');
+
 
