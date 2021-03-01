@@ -11,4 +11,14 @@ class DeviceController extends Controller
     {
     	return Device::all();
     }
+
+
+    public function add(Request $request)
+    {
+
+    	Device::create($request->only(['name','member_id']));
+    	return [
+    		"result"=>"Data has been saved"
+    	];
+    }
 }

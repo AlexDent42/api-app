@@ -23,4 +23,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('list', 'DeviceController@list');
 
+Route::post('add', 'DeviceController@add');
+
 
